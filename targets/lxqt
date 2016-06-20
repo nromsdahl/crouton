@@ -5,7 +5,7 @@
 
 if [ "${TARGETNOINSTALL:-c}" = 'c' ]; then
    if release -lt trusty; then
-       error 99 "LXQT packages are not available for Ubuntu releases prior to xenial."
+       error 99 "LXQT packages are not available for Ubuntu releases prior to trusty"
    fi
    if release -lt stretch; then
        error 99 "LXQT packages are not available for Debian releases prior to stretch."
